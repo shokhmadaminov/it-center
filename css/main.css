@@ -70,6 +70,16 @@ ul, ol {
     display: none;
 }
 
+.title {
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.title span {
+    color: var(--primary-color);
+}
+
+
 .btn {
     border: 8px solid var(--white-color);
     border-radius: 10px;
@@ -79,6 +89,7 @@ ul, ol {
     text-transform: uppercase;
     box-shadow: 0 4px 4px 0 var(--primary-color-25);
     transition: 0.5s ease;
+    font-size: 1.5rem;
 }
 .btn:hover {
     background-color: var(--secondary-color);
@@ -247,6 +258,46 @@ ul, ol {
 }
 
 
+/* hero section styles */
+.hero {
+    padding-top: 16rem;
+    padding-bottom: 34rem;
+    background-image: url("../images/png/hero-circle.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__content {
+    width: 100%;
+    max-width: 748px;
+}
+.hero__subtitle {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.hero__title {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+.hero__text {
+    width: 100%;
+    max-width: 600px;
+    font-weight: 600;
+    color: var(--secondary-color-60);
+    margin-bottom: 6rem;
+}
+.hero__btn {
+    padding: 3rem 7rem;
+    display: inline-flex;
+}
+
 
 /* x-large */
 @media only screen and (max-width: 1400px) {
@@ -260,6 +311,7 @@ ul, ol {
 
 /* medium */
 @media only screen and (max-width: 992px) {
+    /* header */
     .left-nav {
         display: flex;
     }
@@ -272,6 +324,11 @@ ul, ol {
     .header .header__lang {
         display: none;
     }
+
+    /* hero */
+    .hero__img {
+        display: none;
+    }
 }
 
 /* small */
@@ -279,11 +336,34 @@ ul, ol {
     html {
         font-size: 55%;
     }
+    .title {
+        font-size: 4.6rem;
+    }
+
+    /* hero */
+    .hero {
+        padding-top: 10rem;
+        padding-bottom: 24rem;
+        background-size: 65%;
+    }
+    .hero__subtitle {
+        font-size: 2.4rem;
+    }
+    .hero__text {
+        font-size: 1.6rem;
+    }
+    .hero__btn {
+        padding: 2rem 3rem;
+    }
 }
 
 /* x-small */
 @media only screen and (max-width: 576px) {
     .header .header__btn {
         display: none;
+    }
+    .hero {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
     }
 }
