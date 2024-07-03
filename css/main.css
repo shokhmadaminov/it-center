@@ -482,6 +482,9 @@ ul, ol {
     .statistics__right-title {
         font-size: 2rem;
     }
+    .statistics__right-list {
+        gap: 1.6rem;
+    }
     .statistics__right-list span:first-child {
         font-size: 2rem;
     }
